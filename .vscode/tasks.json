@@ -2,10 +2,10 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "build hello world",
+        "label": "build app",
         "type": "shell",
         "command": "g++",
-        "args": ["-g", "-o", "helloworld", "helloworld.cpp"],
+        "args": ["-static-libgcc", "-static-libstdc++", "-g", "-o", "app", "app.cpp"],
         "group": {
           "kind": "build",
           "isDefault": true
